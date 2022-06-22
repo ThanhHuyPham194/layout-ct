@@ -12,7 +12,7 @@ import House from "./pages/House/House";
 import Education from "./pages/Education/Education";
 import Technology from "./pages/Technology/Technology";
 import { DetailTemplate } from "./templates/DetailTemplate/DetailTemplate";
-import AboutTemplate from "./templates/AboutTemplate/AboutTemplate";
+import About from "./pages/About/About";
 
 function App() {
 	return (
@@ -30,9 +30,8 @@ function App() {
 					<Route path="house" element={<House />} ></Route>
 					<Route path="education" element={<Education />} ></Route>
 				</Route>
-				<Route path="about" element={<AboutTemplate/>}>
+				<Route path="about" element={<About />} ></Route>
 
-				</Route>
 				<Route path="/" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
